@@ -297,7 +297,7 @@ a{
     position: absolute;
     z-index: 999;
     color: white;
-    font-size: 5px;
+    font-size: 12px;
 }
 
 #tooltip .tipBody {
