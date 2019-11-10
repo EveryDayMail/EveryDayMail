@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+    $('#btn_template').click(function () {
+        location.href="template.html";
+    });
     
     $("#write_new_link").mouseover(function () {
         $('#write_new').animate({opacity: "0.5"}, 1000);

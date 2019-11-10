@@ -36,7 +36,7 @@ $(function () {
 
       
     $("#btn_cancel").click(function () {
-        location.href="index.html";
+        window.history.back();
     });
 
     $("#btn_complete").click(function () {

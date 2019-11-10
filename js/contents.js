@@ -1,11 +1,11 @@
 $(function () {
     
-    $('#btn_template').click(function () {
+   
    
         initTemplateList("templateList");
         initTemplateCategory();
-        $('#btn_newCategory').hide();
-        $('#btn_delCategory').hide();
+        // $('#btn_newCategory').hide();
+        // $('#btn_delCategory').hide();
         
         $("select#picker").change(function () {
             var select_name = $(this).children("option:selected").text();
@@ -20,7 +20,7 @@ $(function () {
                 
 
         });
-    });
+  
     
 });
 function initTemplateList(list){

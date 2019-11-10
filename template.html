@@ -1,27 +1,28 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>매일메일</title>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
- 
+
 </head>
+
 <body>
-    
+
     <header>
         <a href="index.html"><img class="logo" src="icons/logo.png" alt="logo"></a>
         <div class="btnlist">
-            <button class="dropbtn" id="btn_template" title="기본 템플릿"><img id="dropbtn_img_template" width="30" src="icons/list_icon_32.png" /></button>
+            <button class="dropbtn" id="btn_template" title="기본 템플릿"><img id="dropbtn_img_template" width="30"
+                    src="icons/list_icon_32.png" /></button>
             <div class="dropdown">
-                <button class="dropbtn"><img id="dropbtn_img"  src="icons/settings_icon_32.png" /></button>
+                <button class="dropbtn"><img id="dropbtn_img" src="icons/settings_icon_32.png" /></button>
                 <div class="dropdown-content">
                     <div id="clearList">템플릿 전체 초기화</div>
-                    <div id="clearCategory">카테고리 라벨 초기화</div>
-                    <div id="clearTemplate">임시 초기화</div>
                 </div>
             </div>
         </div>
@@ -36,14 +37,12 @@
             <option value="분류 없음">분류 없음</option>
         </select>
     </div>
-    <button class="button" id="btn_newCategory">추가</button>
-    <button class="button" id="btn_delCategory">삭제</button>
-
     <div class="template_list"></div>
-    
-    <a href="write.html" id="write_new_link" title="나만의 템플릿을 만들어 보세요!"><img id="write_new" src="icons/plus_light_icon_64.png" /></a>
+
 
     <script src="js/crud.js"></script>
     <script src='js/main.js'></script>
+    <script src="js/contents.js"></script>
 </body>
+
 </html>
