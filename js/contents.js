@@ -1,25 +1,22 @@
 $(function () {
     
-   
-   
-        initTemplateList("templateList");
-        initTemplateCategory();
-        // $('#btn_newCategory').hide();
-        // $('#btn_delCategory').hide();
+    initTemplateList("templateList");
+    initTemplateCategory();
+
+    $("select#picker").change(function () {
+        var select_name = $(this).children("option:selected").text();
+        $(this).siblings("label").text(select_name);
+
+        if (select_name == "전체")
+            initTemplateList("templateList");
+        else {
+            initSelectedList(select_name, "templateList");
+            $('.btn_delete').hide();
+        }
+
+
+    });
         
-        $("select#picker").change(function () {
-            var select_name = $(this).children("option:selected").text();
-            $(this).siblings("label").text(select_name);
-
-            if (select_name == "전체")
-                initTemplateList("templateList");
-            else{
-                initSelectedList(select_name, "templateList");
-                $('.btn_delete').hide();
-            }
-                
-
-        });
   
     
 });
