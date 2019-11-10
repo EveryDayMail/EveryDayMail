@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     $("#write_new_link").mouseover(function () {
-        $('#write_new').prop('src', 'icons/plus_light_icon_64.png');
+        $('#write_new').animate({opacity: "0.5"}, 1000);
         var tip = $(this).attr('title');
 
         $(this).attr('title','');
@@ -14,7 +14,7 @@ $(document).ready(function() {
     
         $(this).attr('title', $('.tipBody').html());
         $(this).children('div#tooltip').remove();
-        $('#write_new').prop('src', 'icons/plus_icon_64.png');
+        $('#write_new').animate({opacity: "1"}, 1000);
     });
 
     $('#btn_template').mouseover(function(){
