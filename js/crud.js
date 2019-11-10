@@ -79,7 +79,7 @@ function insertData() {
     myform_contents = myform_contents.replace(/(?:\r\n|\r|\n)/g, '<br/>');
     
     if (myform_title == "" || myform_contents=="")
-        alert('제목을 입력해주세요');
+        alert('제목과 내용을 모두 입력해주세요');
     else {
         var myformList;
         try {
