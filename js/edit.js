@@ -68,6 +68,16 @@ $(function () {
             alert("document.execCommand('copy');를 지원하지 않는 브라우저입니다.");
         }
     });
+
+    $('#btn_copyTitle').click(function () {
+        $('#comment_title').select();
+        try {
+            document.execCommand('copy');
+            alert("클립보드로 복사되었습니다.");
+        } catch (e) {
+            alert("document.execCommand('copy');를 지원하지 않는 브라우저입니다.");
+        }
+    });
     
     $('#btn_reSave').click(function () {
         $(this).hide();

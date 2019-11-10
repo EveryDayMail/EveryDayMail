@@ -172,8 +172,24 @@ a{
     vertical-align: middle;
     font-family: NanumSquareL;
 }
-.comment_title{
-    margin: 10px;
+#comment_title{
+    margin: 0px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+    padding: 3px;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 1px solid #01D6B3;
+    font-size:13pt;
+    font-family: NanumSquare;
+}
+#btn_copyTitle{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 9pt;
+
 }
 
 .select_box {

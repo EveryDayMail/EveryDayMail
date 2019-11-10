@@ -73,7 +73,7 @@ class myform {
 
 function insertData() {
     
-    var myform_title = $('#myform_title').val();
+    var myform_title = $('#myform_title, #comment_title').val();
     var myform_category = $('#category option:selected').val();
     var myform_contents = $('#myform, #result').val();
     myform_contents = myform_contents.replace(/(?:\r\n|\r|\n)/g, '<br/>');
@@ -172,7 +172,7 @@ function initCheckList(list, id) {
         str += '<input type="checkbox" id="line'+i +'"  class="chk" name="chk" checked="true"/> ';
         str += '<label for="line' + i + '"><input type="text" id="text_line' + i + '" value="' + contentSplit[i] + '"></label>';
     }
-    $('.comment_title').append(title);
+    $('#comment_title').val(title);
     $('#check_list').html(str);
 }
 
