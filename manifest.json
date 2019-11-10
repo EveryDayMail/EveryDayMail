@@ -6,9 +6,6 @@
     
     "description": "메일 템플릿 관리 서비스",
     "permissions" : [
-        "tabs",
-        "contextMenus",
-        "notifications",
         "storage"
     ],
     "icons": {
