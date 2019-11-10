@@ -51,7 +51,6 @@ $(function () {
 
     });
 
-    //삭제대상
     $('#clearCategory').click(function () {
         localStorage.removeItem("categoryList");
     });
