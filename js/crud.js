@@ -51,13 +51,6 @@ $(function () {
 
     });
 
-    $('#clearCategory').click(function () {
-        localStorage.removeItem("categoryList");
-    });
-    $('#clearTemplate').click(function () {
-        localStorage.removeItem("templateList");
-    });
-    
 
 })
 
