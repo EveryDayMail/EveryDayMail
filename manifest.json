@@ -12,14 +12,14 @@
         "storage"
     ],
     "icons": {
-        "32": "icons/list_icon_32.png"
+        "128": "icons/app_icon.png"
     },
 
     
     "sidebar_action": {
         "default_page": "index.html", 
         "default_icon": {
-            "32" : "icons/list_icon_32.png"
+            "128" : "icons/sidebar_icon.png"
         },
         "default_title": "매일메일", 
         "use_navigation_bar": true 
