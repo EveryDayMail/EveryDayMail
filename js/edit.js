@@ -45,7 +45,7 @@ $(function () {
             var line_id = $(this).attr("id");
             written_str += $("input[id='text_" + line_id + "']").val() + '\n';
         });
-        written_str = written_str.slice(0,-2);
+        written_str = written_str.slice(0,-1);
 
         $("#edit_box").hide();
         $("#btn_complete").hide();
